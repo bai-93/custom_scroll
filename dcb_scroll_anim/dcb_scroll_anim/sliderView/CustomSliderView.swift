@@ -29,11 +29,11 @@ class CustomSliderV: UIView {
 
     // MARK: - layer for scale
 
-    private lazy var curveCanvasShapeLayer: CAShapeLayer = self.makeShapeLayer()
-    private lazy var gradient: CAGradientLayer = self.makeGradientLayer()
-    private lazy var circleView: UIView = self.makeCircleView()
+    lazy var curveCanvasShapeLayer: CAShapeLayer = self.makeShapeLayer()
+    lazy var gradient: CAGradientLayer = self.makeGradientLayer()
+    lazy var circleView: UIView = self.makeCircleView()
 
-    private lazy var backgroundView: UIView = self.makeBackgroundView()
+    lazy var backgroundView: UIView = self.makeBackgroundView()
 
     private lazy var topControl: UIView = self.makeControlPointView()
     private lazy var rightSideControlPoint2: UIView = self.makeControlPointView()
@@ -43,23 +43,23 @@ class CustomSliderV: UIView {
     private lazy var rightEndCurve: UIView = self.makeControlPointView()
     private lazy var rightSideControlPoint1: UIView = self.makeControlPointView()
 
-    private lazy var nativeSlider: UISlider = self.makeSliderView()
-    private lazy var maskShapeLayer: CAShapeLayer = self.makeMaskShapelayer()
+    lazy var nativeSlider: UISlider = self.makeSliderView()
+    lazy var maskShapeLayer: CAShapeLayer = self.makeMaskShapelayer()
 
     lazy var editButton: UIButton = self.makeEditButton()
     lazy var containerFieldCurrency: UIView = self.makeContainer()
 //    lazy var summTextField: UITextField = self.makeUItextField()
     lazy var currencyImageView: UIImageView = self.makeCurrencyImage()
 
-    private var containerView: UIView = UIView()
-    private var allView: [UIView] = []
-    private var refreshScale: CADisplayLink?
-    private var nativeSliderCoordinateX: CGFloat = 0.0
+    var containerView: UIView = UIView()
+    var allView: [UIView] = []
+    var refreshScale: CADisplayLink?
+    var nativeSliderCoordinateX: CGFloat = 0.0
 
     weak var delegate: DelegateChangeSlider?
 
-    private var countOfRect: Int = 20
-    private var pathBounds: CGRect = .zero
+    var countOfRect: Int = 20
+    var pathBounds: CGRect = .zero
 
     init(localView: UIView) {
         containerView = localView

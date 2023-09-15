@@ -15,6 +15,7 @@
 		E42FFE1926CD10F5005BBE84 /* dcb_scroll_animTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42FFE1826CD10F5005BBE84 /* dcb_scroll_animTests.swift */; };
 		E42FFE2426CD10F5005BBE84 /* dcb_scroll_animUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42FFE2326CD10F5005BBE84 /* dcb_scroll_animUITests.swift */; };
 		E46DE25426E220380006327D /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46DE25326E220380006327D /* CustomSliderView.swift */; };
+		E4977F05294DBBAB00284733 /* MockModelDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4977F04294DBBAB00284733 /* MockModelDelegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E42FFE2326CD10F5005BBE84 /* dcb_scroll_animUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dcb_scroll_animUITests.swift; sourceTree = "<group>"; };
 		E42FFE2526CD10F5005BBE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E46DE25326E220380006327D /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
+		E4977F04294DBBAB00284733 /* MockModelDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModelDelegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +115,7 @@
 		E42FFE1726CD10F5005BBE84 /* dcb_scroll_animTests */ = {
 			isa = PBXGroup;
 			children = (
-				E42FFE1826CD10F5005BBE84 /* dcb_scroll_animTests.swift */,
+				E4977F06294DBBB300284733 /* customScrollTest */,
 				E42FFE1A26CD10F5005BBE84 /* Info.plist */,
 			);
 			path = dcb_scroll_animTests;
@@ -134,6 +136,15 @@
 				E46DE25326E220380006327D /* CustomSliderView.swift */,
 			);
 			path = sliderView;
+			sourceTree = "<group>";
+		};
+		E4977F06294DBBB300284733 /* customScrollTest */ = {
+			isa = PBXGroup;
+			children = (
+				E4977F04294DBBAB00284733 /* MockModelDelegates.swift */,
+				E42FFE1826CD10F5005BBE84 /* dcb_scroll_animTests.swift */,
+			);
+			path = customScrollTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4977F05294DBBAB00284733 /* MockModelDelegates.swift in Sources */,
 				E42FFE1926CD10F5005BBE84 /* dcb_scroll_animTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +489,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LM84BW6V5;
+				DEVELOPMENT_TEAM = A7GNC5J7UB;
 				INFOPLIST_FILE = dcb_scroll_animTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,7 +511,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LM84BW6V5;
+				DEVELOPMENT_TEAM = A7GNC5J7UB;
 				INFOPLIST_FILE = dcb_scroll_animTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,7 +532,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LM84BW6V5;
+				DEVELOPMENT_TEAM = A7GNC5J7UB;
 				INFOPLIST_FILE = dcb_scroll_animUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -540,7 +552,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6LM84BW6V5;
+				DEVELOPMENT_TEAM = A7GNC5J7UB;
 				INFOPLIST_FILE = dcb_scroll_animUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
